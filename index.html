@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soave Karaoke</title>
+    <script src="https://unpkg.com/lamejs@1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/id3-writer@1.3.1/dist/id3-writer.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async defer src="https://apis.google.com/js/api.js"></script>
+    <script async defer src="https://accounts.google.com/gsi/client"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-purple': '#8e44ad',
+              'brand-pink': '#c0392b',
+              'dark-bg': '#1a1a2e',
+              'light-bg': '#16213e',
+              'accent-pink': '#e94560',
+              'accent-blue': '#0f3460',
+              'neon-cyan': '#00f5d4',
+              'neon-magenta': '#ff206e',
+              'neon-yellow': '#f1c40f',
+            },
+            animation: {
+              'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+              'slide-in': 'slide-in 0.5s forwards',
+            },
+            keyframes: {
+              'pulse-glow': {
+                '0%, 100%': { boxShadow: '0 0 5px #00f5d4, 0 0 10px #00f5d4' },
+                '50%': { boxShadow: '0 0 20px #ff206e, 0 0 30px #ff206e' },
+              },
+               'slide-in': {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DXrUlhUL.js"></script>
+</head>
+  <body class="bg-dark-bg text-white">
+    <div id="root"></div>
+  </body>
+</html>
